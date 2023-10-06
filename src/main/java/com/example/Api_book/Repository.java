@@ -1,6 +1,8 @@
 package com.example.Api_book;
 
 
+import org.springframework.web.bind.annotation.RequestBody;
+
 import java.util.HashMap;
 
 @org.springframework.stereotype.Repository
@@ -14,7 +16,7 @@ public class Repository {
         String bookName = book.getBookName();
         BookDb.put(bookName,book);
     }
-    public void addAuthorToDb(Author author){
+    public void addAuthorToDb(@RequestBody Author author){
         String authorName = author.getAuthorName();
         AuthorDb.put(authorName,author);
     }
