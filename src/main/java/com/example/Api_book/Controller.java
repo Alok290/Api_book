@@ -16,7 +16,7 @@ public class Controller {
         return "Success";
     }
     @PostMapping("/addAuthor")
-    public String addAuthor(Author author)
+    public String addAuthor(@RequestBody Author author)
     {
         ServiceObj.addAuthor(author);
         return "Success";

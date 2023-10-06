@@ -16,7 +16,7 @@ public class Repository {
         String bookName = book.getBookName();
         BookDb.put(bookName,book);
     }
-    public void addAuthorToDb(@RequestBody Author author){
+    public void addAuthorToDb( Author author){
         String authorName = author.getAuthorName();
         AuthorDb.put(authorName,author);
     }
